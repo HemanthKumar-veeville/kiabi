@@ -10,7 +10,7 @@ interface Product {
   image: string;
   rating: number;
   reviews: number;
-  colors: number;
+  colors: { color: string; image: string }[]; // Updated to array of colors with images
   isExclusive: boolean;
 }
 
@@ -71,7 +71,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           Ajouter au panier
         </Button>
 
-        <p className="text-blue-500 text-sm mt-2">{product.colors} couleurs</p>
+        {/* Color Options */}
+        <p className="text-blue-500 text-sm mt-2">{product.colors.length} couleurs</p> {/* Use colors.length to show available colors */}
       </div>
     </div>
   );

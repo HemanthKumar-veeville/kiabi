@@ -9,16 +9,31 @@ interface ProductInfoProps {
   price: number;
   rating: number;
   reviews: number;
-  colors: string[];
+  colors: { color: string; image: string }[];
   availableSizes: string[];
+  onColorChange: (image: string) => void; // Callback to handle image change
 }
 
-const ProductInfo: React.FC<ProductInfoProps> = ({ name, price, rating, reviews, colors, availableSizes }) => {
-  const [selectedColor, setSelectedColor] = useState(colors[0]); // Default to the first color
-  const [selectedSize, setSelectedSize] = useState('');
+const ProductInfo: React.FC<ProductInfoProps> = ({
+  name,
+  price,
+  rating,
+  reviews,
+  colors,
+  availableSizes,
+  onColorChange,
+}) => {
+  const [selectedColor, setSelectedColor] = useState(colors[0].color); // Default to the first color
 
-  const handleColorChange = (color: string) => setSelectedColor(color);
-  const handleSizeChange = (size: string) => setSelectedSize(size);
+  const handleColorChange = (color: string) => {
+    setSelectedColor(color);
+
+    // Find the selected color image and pass it to the parent (ProductPage)
+    const selectedImage = colors.find((c) => c.color === color)?.image;
+    if (selectedImage) {
+      onColorChange(selectedImage);
+    }
+  };
 
   return (
     <div className="lg:w-1/2 lg:pl-8">
@@ -45,9 +60,9 @@ const ProductInfo: React.FC<ProductInfoProps> = ({ name, price, rating, reviews,
 
       {/* Size Selection */}
       <SizeSelection
-        selectedSize={selectedSize}
-        onSizeSelect={handleSizeChange}
-        availableSizes={availableSizes} // Pass available sizes dynamically
+        selectedSize=""
+        onSizeSelect={() => {}}
+        availableSizes={availableSizes}
       />
 
       {/* Add to Cart Button */}

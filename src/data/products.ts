@@ -39,7 +39,12 @@ export const productsData = [
     image: img1,
     rating: 4.5,
     reviews: 12,
-    colors: 4,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: true,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -50,7 +55,12 @@ export const productsData = [
     image: img2,
     rating: 4.2,
     reviews: 6,
-    colors: 4,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -61,7 +71,12 @@ export const productsData = [
     image: img3,
     rating: 4.9,
     reviews: 36,
-    colors: 2,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -72,7 +87,12 @@ export const productsData = [
     image: img4,
     rating: 4.8,
     reviews: 24,
-    colors: 3,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: true,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -83,7 +103,12 @@ export const productsData = [
     image: img5,
     rating: 4.6,
     reviews: 40,
-    colors: 2,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -94,7 +119,12 @@ export const productsData = [
     image: img6,
     rating: 4.7,
     reviews: 32,
-    colors: 5,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: true,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -105,7 +135,12 @@ export const productsData = [
     image: img7,
     rating: 4.9,
     reviews: 58,
-    colors: 1,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -116,7 +151,12 @@ export const productsData = [
     image: img8,
     rating: 4.5,
     reviews: 18,
-    colors: 3,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: true,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -127,7 +167,12 @@ export const productsData = [
     image: img9,
     rating: 4.8,
     reviews: 28,
-    colors: 4,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -138,7 +183,12 @@ export const productsData = [
     image: img10,
     rating: 4.3,
     reviews: 14,
-    colors: 2,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: true,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -149,7 +199,12 @@ export const productsData = [
     image: img11,
     rating: 4.1,
     reviews: 20,
-    colors: 6,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -160,7 +215,12 @@ export const productsData = [
     image: img12,
     rating: 4.6,
     reviews: 33,
-    colors: 3,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -171,7 +231,12 @@ export const productsData = [
     image: img13,
     rating: 4.2,
     reviews: 8,
-    colors: 10,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -182,7 +247,12 @@ export const productsData = [
     image: img14,
     rating: 4.4,
     reviews: 16,
-    colors: 3,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: true,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -193,7 +263,12 @@ export const productsData = [
     image: img15,
     rating: 4.5,
     reviews: 22,
-    colors: 4,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -204,7 +279,12 @@ export const productsData = [
     image: img16,
     rating: 4.7,
     reviews: 48,
-    colors: 2,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: true,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -215,7 +295,12 @@ export const productsData = [
     image: img17,
     rating: 4.3,
     reviews: 14,
-    colors: 5,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -226,7 +311,12 @@ export const productsData = [
     image: img18,
     rating: 4.4,
     reviews: 12,
-    colors: 6,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -237,7 +327,12 @@ export const productsData = [
     image: img19,
     rating: 4.6,
     reviews: 25,
-    colors: 4,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: true,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -248,7 +343,12 @@ export const productsData = [
     image: img20,
     rating: 4.2,
     reviews: 16,
-    colors: 2,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -259,7 +359,12 @@ export const productsData = [
     image: img21,
     rating: 4.5,
     reviews: 30,
-    colors: 3,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -270,7 +375,12 @@ export const productsData = [
     image: img22,
     rating: 4.8,
     reviews: 40,
-    colors: 5,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -281,7 +391,12 @@ export const productsData = [
     image: img23,
     rating: 4.1,
     reviews: 15,
-    colors: 3,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: true,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -292,7 +407,12 @@ export const productsData = [
     image: img24,
     rating: 4.3,
     reviews: 18,
-    colors: 2,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: true,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -303,7 +423,12 @@ export const productsData = [
     image: img25,
     rating: 4.6,
     reviews: 22,
-    colors: 6,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -314,7 +439,12 @@ export const productsData = [
     image: img26,
     rating: 4.7,
     reviews: 28,
-    colors: 2,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -325,7 +455,12 @@ export const productsData = [
     image: img27,
     rating: 4.9,
     reviews: 36,
-    colors: 3,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: true,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -336,7 +471,12 @@ export const productsData = [
     image: img28,
     rating: 4.4,
     reviews: 14,
-    colors: 4,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: false,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -347,7 +487,12 @@ export const productsData = [
     image: img29,
     rating: 4.3,
     reviews: 20,
-    colors: 4,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: true,
     availableSizes: ["s", "m", "xl", "xxl"]
   },
@@ -358,7 +503,12 @@ export const productsData = [
     image: img30,
     rating: 4.9,
     reviews: 42,
-    colors: 2,
+    colors: [
+      { color: 'Rose', image: img1 },
+      { color: 'Gris clair', image: img12 },
+      { color: 'Noir', image: img13 },
+      { color: 'Vert', image: img14 },
+    ],
     isExclusive: true,
     availableSizes: ["s", "m", "xl", "xxl"]
   },

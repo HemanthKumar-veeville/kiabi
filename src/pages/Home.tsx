@@ -3,7 +3,7 @@ import ProductCard from '@/components/ProductCard';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CategoryAndFilters from '@/components/CategoryAndFilters';
-import { productsData } from "../data/products";
+import { productsData } from '../data/products';
 
 interface Product {
   id: number;
@@ -12,7 +12,7 @@ interface Product {
   image: string;
   rating: number;
   reviews: number;
-  colors: number;
+  colors: { color: string; image: string }[]; // Colors are now an array with associated images
   isExclusive: boolean;
 }
 

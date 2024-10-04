@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import Breadcrumb from '../components/Breadcrumb';
@@ -12,6 +12,9 @@ const ProductPage: React.FC = () => {
 
   // Find the product based on the productId
   const product = productsData.find((product) => product.id === parseInt(productId || '', 10));
+
+  // Initialize the state for the selected image
+  const [selectedImage, setSelectedImage] = useState(product?.image || '');
 
   // If the product is not found, return a message
   if (!product) {
@@ -30,8 +33,7 @@ const ProductPage: React.FC = () => {
       {/* Breadcrumb */}
       <Breadcrumb
         items={[
-          { name: 'Accueil', href: '/' },
-          { name: 'Femme', href: '/femme' },
+          { name: 'Femme', href: '/' },
           { name: product.name, current: true }
         ]}
       />
@@ -40,13 +42,7 @@ const ProductPage: React.FC = () => {
       <div className="container mx-auto px-6 py-8 flex flex-col lg:flex-row">
         {/* Product Image Gallery */}
         <ProductImageGallery
-          mainImage={product.image}
-          thumbnails={[
-            '/path-to-thumbnail-1.jpg', // Use actual product thumbnails if available
-            '/path-to-thumbnail-2.jpg',
-            '/path-to-thumbnail-3.jpg',
-            '/path-to-thumbnail-4.jpg',
-          ]}
+          mainImage={selectedImage} // Display the selected image
         />
 
         {/* Product Info */}
@@ -55,8 +51,9 @@ const ProductPage: React.FC = () => {
           price={product.price}
           rating={product.rating}
           reviews={product.reviews}
-          colors={["red", "blue", "yellow", "green"]}
+          colors={product.colors} // Pass colors with images
           availableSizes={product.availableSizes}
+          onColorChange={setSelectedImage} // Update the image when color changes
         />
       </div>
     </div>

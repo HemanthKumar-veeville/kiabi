@@ -11,7 +11,7 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
       <ul className="flex items-center text-sm text-gray-600">
         <li className="mr-4 flex items-center">
           <ArrowLeftIcon className="h-5 w-5 text-blue-900" />
-          <a href="#" className="ml-2 text-blue-900">
+          <a href="/" className="ml-2 text-blue-900">
             Retour
           </a>
         </li>
