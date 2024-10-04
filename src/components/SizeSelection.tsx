@@ -4,15 +4,16 @@ import {
   SelectTrigger, 
   SelectContent, 
   SelectItem 
-} from '../components/ui/select'; // Import ShadCN components
+} from '../components/ui/Select'; // Import ShadCN components
 import { ArrowLongRightIcon } from '@heroicons/react/24/outline';
 
 interface SizeSelectionProps {
   selectedSize: string;
+  availableSizes: Array<string>;
   onSizeSelect: (size: string) => void;
 }
 
-const SizeSelection: React.FC<SizeSelectionProps> = ({ selectedSize, onSizeSelect }) => {
+const SizeSelection: React.FC<SizeSelectionProps> = ({ selectedSize, onSizeSelect, availableSizes }) => {
   return (
     <div className="mb-6">
       <h3 className="font-semibold text-lg text-blue-900 mb-2">Choisir une taille</h3>
@@ -23,9 +24,7 @@ const SizeSelection: React.FC<SizeSelectionProps> = ({ selectedSize, onSizeSelec
           <span>{selectedSize || "Sélectionner une taille"}</span>
         </SelectTrigger>
         <SelectContent>
-          <SelectItem value="S">S</SelectItem>
-          <SelectItem value="M">M</SelectItem>
-          <SelectItem value="L">L</SelectItem>
+            {availableSizes?.map((sizeValue) => <SelectItem value={sizeValue}>{sizeValue}</SelectItem>)}
         </SelectContent>
       </Select>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import { Button } from "../components/ui/Button";
 
 // Define the Product type
@@ -18,12 +19,22 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+  const navigate = useNavigate(); // Use navigate for redirection
+
+  // Handle redirection to product details page
+  const handleClick = () => {
+    navigate(`/product/${product.id}`);
+  };
+
   return (
-    <div className="bg-white shadow-md rounded-lg overflow-hidden relative">
+    <div
+      className="bg-white shadow-md rounded-lg overflow-hidden relative cursor-pointer"
+      onClick={handleClick} // Add click event to navigate
+    >
       <img
         src={product.image}
         alt={product.name}
-        className="w-full h-56 object-cover"  // Full width and height with object-cover to avoid image cutting
+        className="w-full h-56 object-cover"
       />
 
       {/* Exclu Web Tag */}

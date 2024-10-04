@@ -41,6 +41,7 @@ export const productsData = [
     reviews: 12,
     colors: 4,
     isExclusive: true,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 2,
@@ -51,6 +52,7 @@ export const productsData = [
     reviews: 6,
     colors: 4,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 3,
@@ -61,6 +63,7 @@ export const productsData = [
     reviews: 36,
     colors: 2,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 4,
@@ -71,6 +74,7 @@ export const productsData = [
     reviews: 24,
     colors: 3,
     isExclusive: true,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 5,
@@ -81,6 +85,7 @@ export const productsData = [
     reviews: 40,
     colors: 2,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 6,
@@ -91,6 +96,7 @@ export const productsData = [
     reviews: 32,
     colors: 5,
     isExclusive: true,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 7,
@@ -101,6 +107,7 @@ export const productsData = [
     reviews: 58,
     colors: 1,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 8,
@@ -111,6 +118,7 @@ export const productsData = [
     reviews: 18,
     colors: 3,
     isExclusive: true,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 9,
@@ -121,6 +129,7 @@ export const productsData = [
     reviews: 28,
     colors: 4,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 10,
@@ -131,6 +140,7 @@ export const productsData = [
     reviews: 14,
     colors: 2,
     isExclusive: true,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 11,
@@ -141,6 +151,7 @@ export const productsData = [
     reviews: 20,
     colors: 6,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 12,
@@ -151,6 +162,7 @@ export const productsData = [
     reviews: 33,
     colors: 3,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 13,
@@ -161,6 +173,7 @@ export const productsData = [
     reviews: 8,
     colors: 10,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 14,
@@ -171,6 +184,7 @@ export const productsData = [
     reviews: 16,
     colors: 3,
     isExclusive: true,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 15,
@@ -181,6 +195,7 @@ export const productsData = [
     reviews: 22,
     colors: 4,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 16,
@@ -191,6 +206,7 @@ export const productsData = [
     reviews: 48,
     colors: 2,
     isExclusive: true,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 17,
@@ -201,6 +217,7 @@ export const productsData = [
     reviews: 14,
     colors: 5,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 18,
@@ -211,6 +228,7 @@ export const productsData = [
     reviews: 12,
     colors: 6,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 19,
@@ -221,6 +239,7 @@ export const productsData = [
     reviews: 25,
     colors: 4,
     isExclusive: true,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 20,
@@ -231,6 +250,7 @@ export const productsData = [
     reviews: 16,
     colors: 2,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 21,
@@ -241,6 +261,7 @@ export const productsData = [
     reviews: 30,
     colors: 3,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 22,
@@ -251,6 +272,7 @@ export const productsData = [
     reviews: 40,
     colors: 5,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 23,
@@ -261,6 +283,7 @@ export const productsData = [
     reviews: 15,
     colors: 3,
     isExclusive: true,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 24,
@@ -271,6 +294,7 @@ export const productsData = [
     reviews: 18,
     colors: 2,
     isExclusive: true,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 25,
@@ -281,6 +305,7 @@ export const productsData = [
     reviews: 22,
     colors: 6,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 26,
@@ -291,6 +316,7 @@ export const productsData = [
     reviews: 28,
     colors: 2,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 27,
@@ -301,6 +327,7 @@ export const productsData = [
     reviews: 36,
     colors: 3,
     isExclusive: true,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 28,
@@ -311,6 +338,7 @@ export const productsData = [
     reviews: 14,
     colors: 4,
     isExclusive: false,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 29,
@@ -321,6 +349,7 @@ export const productsData = [
     reviews: 20,
     colors: 4,
     isExclusive: true,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
   {
     id: 30,
@@ -331,5 +360,6 @@ export const productsData = [
     reviews: 42,
     colors: 2,
     isExclusive: true,
+    availableSizes: ["s", "m", "xl", "xxl"]
   },
 ];
